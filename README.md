@@ -1,1 +1,2 @@
-# BRHSHackathon2023
+# BRHackathon2023
+The BRHS Hackathon Website
