@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+  Curves --- All Of Them --- Curves
+</header>
+
+<body class="body">
+  <section>
+    <html>
+
+    <head>
+      <title>Zooming Images</title>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f7f7f7;
+        }
+
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 20px;
+          background-color: #fff;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+          font-size: 28px;
+        }
+
+        .img-container {
+          position: relative;
+          display: inline-block;
+          overflow: hidden;
+          margin: 10px;
+          cursor: pointer;
+          transition: all 0.5s ease-out;
+        }
+
+        .img-container:hover {
+          transform: scale(1.1);
+        }
+
+        .img-container img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: all 0.3s ease-out;
+        }
+
+        .img-container:hover img {
+          transform: scale(1.2);
+        }
+
+        .top-left {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 250px;
+          height: 250px;
+        }
+
+        .top-center {
+          position: absolute;
+          top: 35%;
+          left: 50%;
+          transform: translateX(-50%, -50%);
+          width: 250px;
+          height: 250px;
+          z-index: 1;
+        }
+
+        .top-right {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 250px;
+          height: 250px;
+        }
+
+        .bottom-left {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 250px;
+          height: 250px;
+        }
+
+        .bottom-right {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 250px;
+          height: 250px;
+        }
+      </style>
+    </head>
+
+    <body>
+      <header>
+        <h1>Zooming Images</h1>
+      </header>
+      <main>
+        <div class="img-container top-left">
+          <img src="img/1RedOrangeMainIsland.gif" alt="Image 1" />
+        </div>
+        <div class="img-container top-center" style="right: 600px; left: 600px;">
+          <img src="img/2BlueOrangeMainIsland.gif" alt="Image 2" />
+        </div>
+        <div class="img-container top-right">
+          <img src="img/3BlueGreenMainIsland.gif" alt="Image 3" />
+        </div>
+        <div class="img-container bottom-left">
+          <img src="img/4PurpleBlueMainIsland.gif" alt="Image 4" />
+        </div>
+        <div class="img-container bottom-right">
+          <img src="img/5GreenOrangeMainIsland.gif" alt="Image 5" />
+        </div>
+      </main>
+
+  </section>
+
+  <div class="spacer spacerImg"></div>
+
+  <section class="peach">
+    <h1>Nice Curves Section 2</h1>
+    <p>Officiis optio dicta sit blanditiis sint suscipit quo ipsa ratione harum praesentium quas iusto, illo nostrum
+      dolorem ullam, libero quos voluptate quaerat. Rerum dolores, omnis provident fugit dolorum porro iste.</p>
+
+    <!-- <div class="redWave">
+			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+				<path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+				<path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+				<path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+			</svg>
+		</div> -->
+  </section>
+
+  <div class="spacer spacerImg flip"></div>
+  <section class="whiteSmoke">
+    <h1>Nice Curves Section 3</h1>
+    <p>Obcaecati neque aspernatur exercitationem, vitae atque officia velit corrupti quas placeat doloribus delectus
+      accusantium necessitatibus enim praesentium. Porro tempora non velit voluptas magni. Quidem inventore dolorem
+      repellendus accusantium magnam amet.</p>
+  </section>
+  <section>
+    <h1>Nice Curves Section 4</h1>
+    <p>Placeat aliquam magni cum ipsa dolore eum, a fuga laboriosam id laborum magnam veniam deserunt illo adipisci sed
+      laudantium asperiores tempora inventore sit. Eius velit modi molestiae quos. Nesciunt, optio.</p>
+  </section>
+  <section>
+    <h1>Nice Curves Section 5</h1>
+    <p>Sequi et voluptatum, beatae tenetur eaque accusamus modi ab dignissimos sint illum amet sit a corrupti esse, in
+      ad quod dolores ipsam quas fugit, quidem repellat. Quae earum consequatur excepturi.</p>
+    <img class="pic" src="./img/building1.jpg">
+
+  </section>
+  <section>
+    <h1>Nice Curves Section 6</h1>
+    <p>In velit voluptatum earum neque maxime cum harum laborum eos, sequi quibusdam, obcaecati accusantium libero ipsam
+      nam reiciendis hic vero quia possimus reprehenderit magnam assumenda. Fugiat nihil quas cumque vero.</p>
+  </section>
+  <section>
+    <h1>Nice Curves Section 7</h1>
+    <p>Nobis similique nostrum, totam iusto omnis commodi velit incidunt excepturi delectus nulla ullam cum perspiciatis
+      enim? Facilis modi tenetur, amet nihil ratione distinctio cumque numquam officia iure quod dolores eum!</p>
+  </section>
+  <section>
+    <h1>Nice Curves Section 8</h1>
+    <p>Corrupti consequatur alias optio. Nihil vero deleniti cupiditate fugit. Ratione esse et tempore dolorum.
+      Voluptate enim fugit quisquam quis quod id non dicta, exercitationem, assumenda reiciendis nobis eaque esse alias.
+    </p>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+.body {
+    margin: 0;
+    font-family: 'Prompt' 'Courier New', Courier, monospace;
+    color: white;
+    background: #202731;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding: 100px 20vw;
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20px;
+    padding: 100px 20vw;
+    font-size: 50px;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.blueCurve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.blueCurve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.blueCurve .shape-fill {
+    fill: #050000;
+}
+
+
+.peach {
+    background-color: #FA7268;
+}
+
+.red {
+    background-color: red;
+}
+
+.redWave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.black {
+    background-color: black;
+}
+
+.whiteSmoke {
+    background-color: whitesmoke;
+    color: black;
+}
+
+/* spacer  */
+.spacer {
+     aspect-ratio: 960/300;
+     width: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+
+}
+
+.spacerImg {
+    background-image: url(./img/transition.svg);
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+
+.pic {
+  float: right;
+}
