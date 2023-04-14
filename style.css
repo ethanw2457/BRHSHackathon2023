@@ -41,23 +41,23 @@ section h2 {
 }
 
 section:nth-child(1) {
-	background-image: url('https://picsum.photos/id/1015/1200/800');
+	background-image: url(./img/1RedOrangeMainIsland.gif);
 }
 
 section:nth-child(2) {
-	background-image: url('https://picsum.photos/id/1018/1200/800');
+	background-image: url(./img/2BlueMainIsland.gif);
 }
 
 section:nth-child(3) {
-	background-image: url('https://picsum.photos/id/1020/1200/800');
+	background-image: url(./img/3BlueGreenMainIsland.gif);
 }
 
 section:nth-child(4) {
-	background-image: url('https://picsum.photos/id/1023/1200/800');
+	background-image: url(./img/4PurpleBlueMainIsland.gif);
 }
 
 section:nth-child(5) {
-	background-image: url('https://picsum.photos/id/1025/1200/800');
+	background-image: url(./img/5GreenOrangeMainIsland.gif);
 }
 
 section:nth-child(6) {
