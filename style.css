@@ -1,0 +1,162 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #222;
+	color: #fff;
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	padding: 10px;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 36px;
+	margin: 0;
+}
+
+main {
+	height: 8000px;
+	position: relative;
+}
+
+section {
+	height: 1000px;
+	position: relative;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+}
+
+section h2 {
+	text-align: center;
+	font-size: 36px;
+	margin-top: 200px;
+}
+
+section:nth-child(1) {
+	background-image: url('https://picsum.photos/id/1015/1200/800');
+}
+
+section:nth-child(2) {
+	background-image: url('https://picsum.photos/id/1018/1200/800');
+}
+
+section:nth-child(3) {
+	background-image: url('https://picsum.photos/id/1020/1200/800');
+}
+
+section:nth-child(4) {
+	background-image: url('https://picsum.photos/id/1023/1200/800');
+}
+
+section:nth-child(5) {
+	background-image: url('https://picsum.photos/id/1025/1200/800');
+}
+
+section:nth-child(6) {
+	background-image: url('https://picsum.photos/id/1028/1200/800');
+}
+
+section:nth-child(7) {
+	background-image: url('https://picsum.photos/id/1032/1200/800');
+}
+
+section:nth-child(8) {
+	background-image: url('https://picsum.photos/id/1035/1200/800');
+}
+
+footer {
+	background-color: #333;
+	padding: 10px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer p {
+	font-size: 14px;
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.container img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.top-left,
+.top-right,
+.bottom-left,
+.bottom-right {
+	width: 30%;
+	height: 30%;
+	position: absolute;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.top-left {
+	top: 0;
+	left: 0;
+}
+
+.top-right {
+	top: 0;
+	right: 0;
+}
+
+.bottom-left {
+	bottom: 0;
+	left: 0;
+}
+
+.bottom-right {
+	bottom: 0;
+	right: 0;
+}
+
+.middle {
+	width: 30%;
+	height: 30%;
+	position: absolute;
+	top: 35%;
+	left: 35%;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+.middle:hover {
+	transform: scale(1.2);
+}
+
+.top-left:hover ~ main {
+	transform: translateY(0%);
+}
+
+.top-right:hover ~ main {
+	transform: translateY(0%);
+}
+
+.bottom-left:hover ~ main {
+	transform: translateY(-100%);
+}
+
+.bottom-right:hover ~ main {
+	transform: translateY(-100%);
+}
