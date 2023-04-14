@@ -13,12 +13,21 @@ body {
 header {
 	background-color: #333;
 	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: top 0.3s ease-in-out;
 }
 
-header h1 {
+/* header h1 {
 	text-align: center;
 	font-size: 36px;
 	margin: 0;
+} */
+
+header.hidden {
+	top: -60px;
 }
 
 main {
@@ -159,4 +168,38 @@ footer p {
 
 .bottom-right:hover ~ main {
 	transform: translateY(-100%);
+}
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	transition: transform 0.5s ease-out;
+	padding: 10px;
+	position: fixed;
+	z-index: 1;
+  }
+  
+  .navbar-hidden {
+	transform: translateY(-100%);
+  }
+
+
+nav ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav li {
+	margin: 0 10px;
+}
+
+nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
 }
