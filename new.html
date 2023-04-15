@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website with Smooth Scrolling</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+		}
+
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		.home {
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			overflow: hidden;
+		}
+
+		.home img {
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+			cursor: pointer;
+			transition: all 0.5s ease-in-out;
+			animation: fade-in 1s ease-in-out;
+		}
+
+		.home img:hover {
+			transform: scale(1.1);
+		}
+
+		.section {
+			height: 100vh;
+			display: none;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			color: #fff;
+			font-size: 2rem;
+			animation: fade-in 1s ease-in-out;
+		}
+
+		.section1 {
+			background-color: #333;
+		}
+
+		.section2 {
+			background-color: #ff6347;
+		}
+
+		.section3 {
+			background-color: #00bfff;
+		}
+
+		.section4 {
+			background-color: #8fbc8f;
+		}
+
+		.section5 {
+			background-color: #f0e68c;
+		}
+
+		@keyframes fade-in {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="home">
+			<img src="https://via.placeholder.com/200?text=Section+1" onclick="showSection(1)">
+			<img src="https://via.placeholder.com/200?text=Section+2" onclick="showSection(2)">
+			<img src="https://via.placeholder.com/200?text=Section+3" onclick="showSection(3)">
+			<img src="https://via.placeholder.com/200?text=Section+4" onclick="showSection(4)">
+			<img src="https://via.placeholder.com/200?text=Section+5" onclick="showSection(5)">
+		</div>
+		<div class="section section1">
+			<h1>Section 1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id risus leo. Morbi nec nulla et quam aliquam luctus. Fusce quis nulla ut quam eleifend sodales. Integer euismod quis lacus vel ultricies.</p>
+		</div>
+		<div class="section section2">
+			<h1>Section 2</h1>
+			<p>Donec porttitor, mauris eu lacinia pharetra, leo nisi facilisis sapien, eu lobortis urna metus vel turpis. Fusce auctor enim id nunc malesuada sodales.</p>
+		</div>
+		<div class="section section3">
+			<h1>Section 3</h1>
+			<p>Proin auctor orci ac est congue, eu pulvinar leo laoreet. Integer rhoncus iaculis libero. Nulla facilisi. Sed eget tellus vitae mi elementum malesuada sit amet quis orci.</p>
+		</div>
+		<div class="section section4">
+			<h1>Section 4</h1>
+			<p>Etiam et turpis vel justo vestibulum sollicitudin. Sed maximus lectus id consequat laoreet. Fusce bibendum lobortis velit, ut ornare ex tincidunt a.</p>
+		</div>
+		<div class="section section5">
+			<h1>Section 5</h1>
+			<p>Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent eget nunc euismod, vestibulum ex eu, hendrerit libero.</p>
+		</div>
+	</div>
+	<script>
+		function showSection(sectionNum) {
+  var sections = document.getElementsByClassName("section");
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].style.display = "none";
+  }
+  var targetSection = document.getElementsByClassName("section" + sectionNum)[0];
+  targetSection.style.display = "flex";
+  targetSection.scrollIntoView({ behavior: "smooth" });
+  
+  var home = document.getElementsByClassName("home")[0];
+  home.style.overflow = "hidden";
+  home.style.animation = "exit-home 1s ease-in-out";
+  setTimeout(function() {
+    home.style.display = "none";
+  }, 1000);
+}
+
+
+		@keyframes exit-home {
+			from { transform: translateY(0); opacity: 1; }
+			to { transform: translateY(-100%); opacity: 0; }
+		}
+	</script>
+</body>
+</html>
