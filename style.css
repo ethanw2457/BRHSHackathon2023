@@ -72,12 +72,16 @@
   } */
 
   .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Set the height of the container to full viewport height */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 300px;
+    margin: auto;
     z-index: 999;
   }
+
   .center img {
     max-width: 100%;
     max-height: 100%;
@@ -109,8 +113,6 @@
     margin: 20px;
     position: absolute;
   }
-
-
 
 
 
