@@ -10,8 +10,6 @@
 </head>
 
 <body class="body" cz-shortcut-listen="true">
-  <link rel="stylesheet" href="./pixelBkgd/particles.css">
-  <iframe src="./pixelBkgd/particles.html" id="particles-frame"></iframe>
   <header>
     Curves --- All Of Them --- Curves
   </header>
@@ -21,20 +19,20 @@
       <h1>Zooming Images</h1>
     </header>
     <main>
-      <div class="img-container top-left">
+      <div class="img-container top-left" onclick="transitionToSection('section1')">
         <img src="./img/1RedOrangeMainIsland.gif" alt="Image 1">
       </div>
-      <div class="img-container top-center" style="right: 600px; left: 600px;">
-        <img src="./img/2BlueOrangeMainIsland.gif" alt="Image 2">
+      <div class="img-container top-center" style="right: 600px; left: 600px;" onclick="transitionToSection('section2')">
+        <img src="./img/2BlueOrangeMainIsland.gif" alt="Image 2" onclick="transitionToSection('section3')">
       </div>
       <div class="img-container top-right">
-        <img src="./img/3BlueGreenMainIsland.gif" alt="Image 3">
+        <img src="./img/3BlueGreenMainIsland.gif" alt="Image 3" onclick="transitionToSection('section4')">
       </div>
       <div class="img-container bottom-left">
-        <img src="./img/4PurpleBlueMainIsland.gif" alt="Image 4">
+        <img src="./img/4PurpleBlueMainIsland.gif" alt="Image 4" onclick="transitionToSection('section5')">
       </div>
       <div class="img-container bottom-right">
-        <img src="./img/5GreenOrangeMainIsland.gif" alt="Image 5">
+        <img src="./img/5GreenOrangeMainIsland.gif" alt="Image 5" onclick="transitionToSection('section6')">
       </div>
     </main>
   </section>
@@ -62,48 +60,48 @@
   <!-- move all the sections with class="newSection" down by 2 inches -->
 
 
-  <section class="newSection" style="top: 2800px;">
+  <section class="newSection" style="top: 2800px;" id="section1">
     <h1>Nice Curves</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
       Eligendi repudiandae dolores, nemo placeat porro itaque? Voluptates est
       quasi vel eum amet eaque incidunt voluptas natus cumque illo? Ratione,
       doloribus molestiae.</p>
   </section>
-  <section class="newSection" style="top: 0px;">
+  <section class="newSection" style="top: 0px;" id="section2">
     <h1>Nice Curves</h1>
     <p>Impedit voluptates, libero sequi at voluptas eum rerum, fugit
       ullam neque doloribus cumque veritatis vel fuga. Aspernatur nam sit sunt
       adipisci atque, facilis veniam aut culpa exercitationem autem eveniet
       odio.</p>
   </section>
-  <section class="newSection">
+  <section class="newSection" id="section3">
     <h1>Nice Curves</h1>
     <p>Nihil labore, aliquam dignissimos commodi perferendis voluptas ut
       nemo exercitationem totam? Omnis maxime vel temporibus recusandae est
       rerum, pariatur beatae cum eius ratione voluptatem officia. Totam fugit
       rerum ipsa eos?</p>
   </section>
-  <section class="newSection">
+  <section class="newSection" id="section4">
     <h1>Nice Curves</h1>
     <p>Debitis, voluptas repellat. Odit veritatis quas quia voluptatibus
       inventore nemo, officia, voluptatum numquam quae dolores, ad
       consequatur rem tenetur ducimus obcaecati repudiandae laudantium
       necessitatibus blanditiis repellendus quis unde dolor. Inventore?</p>
   </section>
-  <section class="newSection">
+  <section class="newSection" id="section5">
     <h1>Nice Curves</h1>
     <p>Placeat sequi et doloremque id nisi recusandae maxime dolor rem
       inventore perferendis. Ab, libero et esse tenetur aperiam sapiente minus
       suscipit quo rerum facere modi temporibus dolor fugiat obcaecati? Ea.</p>
   </section>
-  <section class="newSection">
+  <section class="newSection" id="section6">
     <h1>Nice Curves</h1>
     <p>Suscipit, cum reprehenderit dicta nobis maiores nesciunt
       reiciendis dignissimos tempora dolorem, debitis soluta. Facilis odit a
       ad blanditiis eligendi quas, non possimus alias cum harum, officia
       corrupti sed et quia.</p>
   </section>
-  <section class="newSection">
+  <section class="newSection" id="section7">
     <h1>Nice Curves</h1>
     <p>Debitis ipsum, magnam facere eius sint quam adipisci vitae neque
       architecto tempora odit, fuga, omnis soluta saepe laboriosam doloremque
@@ -111,7 +109,7 @@
   </section>
 
   <!-- section*7>(h1{Nice Curves})+p>lorem -->
-  <script src="./pixelBkgd/particles.js"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
