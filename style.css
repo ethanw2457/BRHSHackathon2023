@@ -63,20 +63,15 @@
   .top-left {
     top: 0;
     left: 0;
+    z-index: 999;
   }
-  
-  /* .top-center {
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  } */
 
   .center {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 300px;
+    height: 300px; 
     width: 300px;
     margin: auto;
     z-index: 999;
@@ -90,16 +85,19 @@
   .top-right {
     top: 0;
     right: 0;
+    z-index: 999;
   }
   
   .bottom-left {
     bottom: 0;
     left: 0;
+    z-index: 999;
   }
   
   .bottom-right {
     bottom: 0;
     right: 0;
+    z-index: 999;
   }
 
   .peach {
@@ -113,8 +111,6 @@
     margin: 20px;
     position: absolute;
   }
-
-
 
   .newSection {
     position: relative;
