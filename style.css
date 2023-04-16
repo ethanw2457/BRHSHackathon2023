@@ -166,3 +166,43 @@ h1 {
     transform: translateY(0);
   }
 }
+
+
+.animate-character {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #8780a3 0%,
+    #721ad1 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite !important;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  0% {
+    background-position: 0% center;
+  }
+  25% {
+    background-position: 100% center;
+  }
+  50% {
+    background-position: 200% center;
+  }
+  75% {
+    background-position: 300% center;
+  }
+  100% {
+    background-position: 400% center;
+  }
+}
