@@ -7,7 +7,7 @@
   
   body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #0C0E11;
   }
 
   particles-frame {
@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #000000;
+    background-color: #0C0E11;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -118,6 +118,7 @@
     flex-direction: column;
     align-items: center;
     min-height: 400px;
-    padding: 100px 20vw
+    padding: 100px 20vw;
+    color: white;
   }
   
