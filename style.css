@@ -151,29 +151,19 @@ h1 {
   color: white;
 }
 
+
 #section2 {
   margin-top: 40px;
   animation: float-in 1s ease-in forwards;
+  animation-delay: 4s; /* Add a delay equal to the duration of the textclip animation */
 }
-
-@keyframes float-in {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
 .animate-character {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #8780a3 0%,
-    #721ad1 29%,
+    #afa7d1 0%,
+    #d47150 29%,
     #ff1361 67%,
     #fff800 100%
   );
@@ -185,7 +175,7 @@ h1 {
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 4s linear infinite !important;
+  animation: float-in 1s ease-in forwards, textclip 4s linear 1s infinite !important;
   display: inline-block;
 }
 
@@ -204,5 +194,16 @@ h1 {
   }
   100% {
     background-position: 400% center;
+  }
+}
+
+@keyframes float-in {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
