@@ -65,11 +65,23 @@
     left: 0;
   }
   
-  .top-center {
+  /* .top-center {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
+  } */
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the container to full viewport height */
+    z-index: 999;
   }
+  .center img {
+    max-width: 100%;
+    max-height: 100%;
+  }  
   
   .top-right {
     top: 0;
